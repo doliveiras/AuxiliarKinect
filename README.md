@@ -9,14 +9,14 @@ Projeto Auxiliar responsável por reconhecer, identificar um sensor kinect para 
 * Lucas Lozano
 
 ##Modificações
-<h2>01/06/2016</h2>
-<h3>Desenvolvedor</h3>
--- Daniel Oliveira
+###01/06/2016
+####Desenvolvedor
+* Daniel Oliveira
 
-- Descrição
---Realização da primeira inclusão do projeto auxiliar.
+#####Descrição
+Realização da primeira inclusão do projeto auxiliar
 
-- Organização da pasta
+#####Organização da pasta
 ```
 └───AuxiliarKinect
 	├───bin
@@ -32,7 +32,11 @@ Projeto Auxiliar responsável por reconhecer, identificar um sensor kinect para 
 	└───Properties
 ```
 
-<h3>Classe/Métodos</h3>
+####Pasta/Classe/Métodos####
+* FuncoesBasicas
+* * InicializarKinect
+* * * InicializarKinect
+* InicializarKinect
 <ul>
   <li>FuncoesBasicas\Classe InicializarKinect
     <ul>
