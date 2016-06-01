@@ -32,11 +32,9 @@ Realização da primeira inclusão do projeto auxiliar
 	└───Properties
 ```
 
-####Pasta/Classe/Métodos####
-* FuncoesBasicas
-- InicializarKinect
-* * * InicializarKinect
-* InicializarKinect
+####**Pasta**/*Classe*/Métodos####
+* **FuncoesBasicas**
+	* *IninializarKinect*
 <ul>
   <li>FuncoesBasicas\Classe InicializarKinect
     <ul>
