@@ -17,10 +17,9 @@ Lucas Lozano
 --Realização da primeira inclusão do projeto auxiliar.
 
 <h3>Organização da pasta<h3>
-```
-└───AuxiliarKinect
-    ├───bin
-    │   ├───Debug
+└───AuxiliarKinect<br/>
+    ├───bin<br/>
+    │   ├───Debug<br/>
     │   └───Release
     ├───FuncoesBasicas
     ├───Movimentos
