@@ -35,11 +35,7 @@ Realização da primeira inclusão do projeto auxiliar
 ####**Pasta**/*Classe*/Métodos####
 * **FuncoesBasicas**
 	* *IninializarKinect*
-<ul>
-  <li>FuncoesBasicas\Classe InicializarKinect
-    <ul>
-      <li>Método InicializarKinect  -- Construtor</li>
-      <li>Método SeletorKinect_KinectChanged(object sender, KinectChangedEventArgs) -- @return void</li>
-    </ul>
-  </li>
-</ul>
+		* InicializarKinect
+		* SeletorKinect_KinectChanged
+			*@param object, KinectChangedEventArgs
+			*@return void
