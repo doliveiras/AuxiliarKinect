@@ -8,15 +8,7 @@ Projeto Auxiliar responsável por reconhecer, identificar um sensor kinect para 
 * Natalia Mazzoni
 * Lucas Lozano
 
-##Modificações
-###01/06/2016
-#####Desenvolvedores
-* Daniel Oliveira
-
-#####Descrição
-Realização da primeira inclusão do projeto auxiliar
-
-#####Organização da pasta
+##Organização da pasta
 ```
 └───AuxiliarKinect
 	├───bin
@@ -32,7 +24,15 @@ Realização da primeira inclusão do projeto auxiliar
 	└───Properties
 ```
 
-####**Pasta**/*Classe*/Métodos####
+##Modificações
+###01/06/2016
+#####Desenvolvedores
+* Daniel Oliveira
+
+#####Descrição
+Realização da primeira inclusão do projeto auxiliar
+
+#####**Pasta**/*Classe*/Métodos####
 * **FuncoesBasicas**
 	* *IninializarKinect*
 		* InicializarKinect
