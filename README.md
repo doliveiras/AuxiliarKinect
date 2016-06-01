@@ -13,10 +13,10 @@ Lucas Lozano
 <h3>Desenvolvedor</h3>
 -- Daniel Oliveira
 
-<h3>Descrição></h3>
+- Descrição
 --Realização da primeira inclusão do projeto auxiliar.
 
-<h3>Organização da pasta</h3>
+- Organização da pasta
 ```
 └───AuxiliarKinect
 	├───bin
