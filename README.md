@@ -16,7 +16,7 @@ Lucas Lozano
 <h3>Descrição></h3>
 --Realização da primeira inclusão do projeto auxiliar.
 
-<h3>Organização da pasta<h3>
+<h3>Organização da pasta</h3>
 ```
 └───AuxiliarKinect
 	├───bin
@@ -37,7 +37,7 @@ Lucas Lozano
   <li>FuncoesBasicas\Classe InicializarKinect
     <ul>
       <li>Método InicializarKinect  -- Construtor</li>
-      <li>Método SeletorKinect_KinectChanged(object sender, KinectChangedEventArgs) -- @return void
+      <li>Método SeletorKinect_KinectChanged(object sender, KinectChangedEventArgs) -- @return void</li>
     </ul>
   </li>
 </ul>
