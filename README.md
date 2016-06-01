@@ -4,9 +4,9 @@
 Projeto Auxiliar responsável por reconhecer, identificar um sensor kinect para ser utilizado no projeto EstudandoKinect3
 
 ## Responsáveis
-*Daniel Oliveira*
-Natalia Mazzoni
-Lucas Lozano
+*Daniel Oliveira
+*Natalia Mazzoni
+*Lucas Lozano
 
 ##Modificações
 <h2>01/06/2016</h2>
