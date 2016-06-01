@@ -37,5 +37,5 @@ Realização da primeira inclusão do projeto auxiliar
 	* *IninializarKinect*
 		* InicializarKinect
 		* SeletorKinect_KinectChanged
-			*@param object, KinectChangedEventArgs
-			*@return void
+			* @param object, KinectChangedEventArgs
+			* @return void
