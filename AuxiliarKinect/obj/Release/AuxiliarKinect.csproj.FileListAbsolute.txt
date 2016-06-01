@@ -1,0 +1,8 @@
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\bin\Release\AuxiliarKinect.dll
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\bin\Release\AuxiliarKinect.pdb
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\bin\Release\Microsoft.Kinect.dll
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\bin\Release\Microsoft.Kinect.xml
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\obj\Release\AuxiliarKinect.dll
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\obj\Release\AuxiliarKinect.pdb
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\bin\Release\Microsoft.Kinect.Toolkit.dll
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\obj\Release\AuxiliarKinect.csprojResolveAssemblyReference.cache
