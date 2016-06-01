@@ -10,7 +10,7 @@ Projeto Auxiliar responsável por reconhecer, identificar um sensor kinect para 
 
 ##Modificações
 ###01/06/2016
-####Desenvolvedor
+#####Desenvolvedores
 * Daniel Oliveira
 
 #####Descrição
@@ -34,7 +34,7 @@ Realização da primeira inclusão do projeto auxiliar
 
 ####Pasta/Classe/Métodos####
 * FuncoesBasicas
-* * InicializarKinect
+- InicializarKinect
 * * * InicializarKinect
 * InicializarKinect
 <ul>
