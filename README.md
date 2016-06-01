@@ -17,18 +17,19 @@ Lucas Lozano
 --Realização da primeira inclusão do projeto auxiliar.
 
 <h3>Organização da pasta<h3>
-└───AuxiliarKinect<br/>
-    ├───bin<br/>
-    │   ├───Debug<br/>
-    │   └───Release
-    ├───FuncoesBasicas
-    ├───Movimentos
-    ├───obj
-    │   ├───Debug
-    │   │   └───TempPE
-    │   └───Release
-    │       └───TempPE
-    └───Properties
+```
+└───AuxiliarKinect
+	├───bin
+	│   ├───Debug
+	│   └───Release
+	├───FuncoesBasicas
+	├───Movimentos
+	├───obj
+	├───Debug
+	│   └───TempPE
+	│   └───Release
+	│       └───TempPE
+	└───Properties
 ```
 
 <h3>Classe/Métodos</h3>
