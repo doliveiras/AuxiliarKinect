@@ -45,11 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FuncoesBasicas\InicializadorKinect.cs" />
+    <Compile Include="FuncoesBasicas\Util.cs" />
+    <Compile Include="Movimentos\EstadoRastreamento.cs" />
+    <Compile Include="Movimentos\IRastreador.cs" />
+    <Compile Include="Movimentos\Movimento.cs" />
+    <Compile Include="Movimentos\Pose.cs" />
+    <Compile Include="Movimentos\Poses\PoseT.cs" />
+    <Compile Include="Movimentos\Rastreador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Movimentos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
