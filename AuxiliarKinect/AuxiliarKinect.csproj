@@ -47,9 +47,16 @@
     <Compile Include="FuncoesBasicas\InicializadorKinect.cs" />
     <Compile Include="FuncoesBasicas\Util.cs" />
     <Compile Include="Movimentos\EstadoRastreamento.cs" />
+    <Compile Include="Movimentos\GestoQuadroChave.cs" />
+    <Compile Include="Movimentos\Gesto.cs" />
+    <Compile Include="Movimentos\Gestos\Aceno\Aceno.cs" />
+    <Compile Include="Movimentos\Gestos\Aceno\AcenoMaoAntesCotovelo.cs" />
+    <Compile Include="Movimentos\Gestos\Aceno\AcenoMaoAposCotovelo.cs" />
+    <Compile Include="Movimentos\Gestos\Aceno\AcenoMaoSobreCotovelo.cs" />
     <Compile Include="Movimentos\IRastreador.cs" />
     <Compile Include="Movimentos\Movimento.cs" />
     <Compile Include="Movimentos\Pose.cs" />
+    <Compile Include="Movimentos\Poses\PosePause.cs" />
     <Compile Include="Movimentos\Poses\PoseT.cs" />
     <Compile Include="Movimentos\Rastreador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
