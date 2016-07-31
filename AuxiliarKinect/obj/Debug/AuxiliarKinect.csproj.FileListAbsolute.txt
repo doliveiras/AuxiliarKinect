@@ -13,3 +13,4 @@ C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKine
 C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKinect.dll
 C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKinect.pdb
 C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\bin\Debug\Microsoft.Kinect.dll
+C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\bin\Debug\Microsoft.Kinect.Toolkit.dll

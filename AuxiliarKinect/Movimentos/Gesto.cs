@@ -44,15 +44,21 @@ namespace AuxiliarKinect.Movimentos
                         if (ContadorQuadros >= QuadroChaveAtual.Value.QuadroLimiteInferior && ContadorQuadros <= QuadroChaveAtual.Value.QuadroLimiteSuperior)
                             ProximoQuadroChave();
 
-                        else if (ContadorQuadros < QuadroChaveAtual.Value.QuadroLimiteInferior)
+                        else if (ContadorQuadros <= QuadroChaveAtual.Value.QuadroLimiteSuperior)
                             PermanecerRastreando();
 
                         else if (ContadorQuadros > QuadroChaveAtual.Value.QuadroLimiteSuperior)
+                        {
                             ReiniciarRastreamento();
+                        }
+                            
                     }
                 }
-                else if (ContadorQuadros < QuadroChaveAtual.Value.QuadroLimiteSuperior)
+                else if (ContadorQuadros > QuadroChaveAtual.Value.QuadroLimiteSuperior)
+                {
                     ReiniciarRastreamento();
+                }
+                   
 
                 else PermanecerRastreando();
             }

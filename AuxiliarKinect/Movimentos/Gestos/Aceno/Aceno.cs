@@ -16,21 +16,13 @@ namespace AuxiliarKinect.Movimentos.Gestos.Aceno
 
         private void InicializaQuadrosChave()
         {
-
             QuadrosChave = new LinkedList<GestoQuadroChave>();
-
-            QuadrosChave.AddFirst(new GestoQuadroChave(new AcenoMaoAposCotovelo(), 0, 0));
-
+            QuadrosChave.AddFirst(new GestoQuadroChave(new AcenoMaoAposCotovelo(), 1, 25));
             QuadrosChave.AddLast(new GestoQuadroChave(new AcenoMaoSobreCotovelo(), 1, 25));
-
             QuadrosChave.AddLast(new GestoQuadroChave(new AcenoMaoAntesCotovelo(), 1, 25));
-
             QuadrosChave.AddLast(new GestoQuadroChave(new AcenoMaoSobreCotovelo(), 1, 25));
-
             QuadrosChave.AddLast(new GestoQuadroChave(new AcenoMaoAposCotovelo(), 1, 25));
-
             QuadrosChave.AddLast(new GestoQuadroChave(new AcenoMaoSobreCotovelo(), 1, 25));
-
             QuadrosChave.AddLast(new GestoQuadroChave(new AcenoMaoAntesCotovelo(), 1, 25));
         }
 
