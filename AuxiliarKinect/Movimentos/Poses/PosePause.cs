@@ -14,16 +14,17 @@ namespace AuxiliarKinect.Movimentos.Poses
         {
             this.Nome = "PosePause";
             this.QuadroIdentificacao = 30;
+            historico = new List<Skeleton>();
         }
 
-        
+
         protected override bool PosicaoValida(Skeleton esqueletoUsuario)
         {
             const double ANGULO_ESPERADO = 25;
             double margemErroPosicao = 0.30;
             double margemErroAngulo = 10;
 
-            Joint quadrilEsquerdo =  esqueletoUsuario.Joints[JointType.HipLeft];
+            Joint quadrilEsquerdo = esqueletoUsuario.Joints[JointType.HipLeft];
             Joint ombroEsquerdo = esqueletoUsuario.Joints[JointType.ShoulderLeft];
             Joint maoEsquerda = esqueletoUsuario.Joints[JointType.HandLeft];
             Joint cotoveloEsquerdo = esqueletoUsuario.Joints[JointType.ElbowLeft];
@@ -35,7 +36,7 @@ namespace AuxiliarKinect.Movimentos.Poses
             bool maoEsquerdaAposCotovelo = maoEsquerda.Position.X < cotoveloEsquerdo.Position.X;
             bool maoEsquerdaAbaixoCotovelo = maoEsquerda.Position.Y < cotoveloEsquerdo.Position.Y;
 
-            return  anguloCorreto && 
+            return anguloCorreto &&
                     maoEsquerdaDistanciaCorreta &&
                     maoEsquerdaAposCotovelo &&
                     maoEsquerdaAbaixoCotovelo;

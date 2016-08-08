@@ -8,9 +8,9 @@ C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKin
 C:\Users\Daniel\Documents\Visual Studio 2015\Projects\AuxiliarKinect\AuxiliarKinect\bin\Debug\Microsoft.Kinect.Toolkit.dll
 C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\bin\Debug\AuxiliarKinect.dll
 C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\bin\Debug\AuxiliarKinect.pdb
-C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\bin\Debug\Microsoft.Kinect.xml
-C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKinect.csprojResolveAssemblyReference.cache
-C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKinect.dll
-C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKinect.pdb
 C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\bin\Debug\Microsoft.Kinect.dll
 C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\bin\Debug\Microsoft.Kinect.xml
+C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKinect.dll
+C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKinect.pdb
+C:\Users\Lucas\Source\Repos\AuxiliarKinect\AuxiliarKinect\obj\Debug\AuxiliarKinect.csprojResolveAssemblyReference.cache

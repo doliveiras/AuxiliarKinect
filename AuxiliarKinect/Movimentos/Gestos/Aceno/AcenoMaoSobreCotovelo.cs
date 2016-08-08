@@ -12,7 +12,7 @@ namespace AuxiliarKinect.Movimentos.Gestos.Aceno
     {
         protected override bool PosicaoValida(Skeleton esqueletoUsuario)
         {
-            double margemErro = 0.30;
+            double margemErro = 0.3;
 
             Joint maoDireita = esqueletoUsuario.Joints[JointType.HandRight];
 

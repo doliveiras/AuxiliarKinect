@@ -14,6 +14,7 @@ namespace AuxiliarKinect.Movimentos.Poses
         {
             this.Nome = "PoseT";
             this.QuadroIdentificacao = 10;
+            historico = new List<Skeleton>();
         }
 
         protected override bool PosicaoValida(Skeleton esqueletoUsuario)

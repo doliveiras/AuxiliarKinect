@@ -16,5 +16,7 @@ namespace AuxiliarKinect.Movimentos
         public abstract EstadoRastreamento Rastrear(Skeleton esqueletoUsuario);
 
         protected abstract bool PosicaoValida(Skeleton esqueletoUsuario);
+
+        public  List<Skeleton> historico { get; set; }
     }
 }

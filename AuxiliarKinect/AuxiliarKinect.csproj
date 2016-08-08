@@ -45,7 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FuncoesBasicas\InicializadorKinect.cs" />
+    <Compile Include="FuncoesBasicas\SkeletonPersistenceUtil.cs" />
     <Compile Include="FuncoesBasicas\Util.cs" />
+    <Compile Include="FuncoesBasicas\Worker.cs" />
     <Compile Include="Movimentos\EstadoRastreamento.cs" />
     <Compile Include="Movimentos\GestoQuadroChave.cs" />
     <Compile Include="Movimentos\Gesto.cs" />

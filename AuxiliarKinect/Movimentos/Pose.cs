@@ -1,8 +1,10 @@
-﻿using Microsoft.Kinect;
+﻿using AuxiliarKinect.FuncoesBasicas;
+using Microsoft.Kinect;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AuxiliarKinect.Movimentos
@@ -17,9 +19,12 @@ namespace AuxiliarKinect.Movimentos
 
             if (esqueletoUsuario != null && PosicaoValida(esqueletoUsuario))
             {
+                //if(historico != null) historico.Add(esqueletoUsuario);
                 if(QuadroIdentificacao == ContadorQuadros)
                 {
+                   // printHistorico();
                     novoEstado = EstadoRastreamento.Identificado;
+                    ContadorQuadros++;
                 }
 
                 else
@@ -31,6 +36,7 @@ namespace AuxiliarKinect.Movimentos
 
             else
             {
+               // printHistorico();
                 novoEstado = EstadoRastreamento.NaoIdentificado;
                 ContadorQuadros = 0;
             }
@@ -44,6 +50,17 @@ namespace AuxiliarKinect.Movimentos
             {
                 return ContadorQuadros * 100 / QuadroIdentificacao;
             }
+        }
+
+        public void printHistorico()
+        {
+            Worker w = new Worker();
+            w.setEsqueleto(historico);
+            Thread workerThread = new Thread(w.DoWork);
+            workerThread.Start();
+
+            while (!workerThread.IsAlive) ;
+            Thread.Sleep(1);
         }
     }
 }

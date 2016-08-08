@@ -1,16 +1,17 @@
-﻿using Microsoft.Kinect;
+﻿using AuxiliarKinect.FuncoesBasicas;
+using Microsoft.Kinect;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace AuxiliarKinect.Movimentos
 {
     public abstract class Gesto : Movimento
     {
         protected LinkedList<GestoQuadroChave> QuadrosChave { get; set; }
-
         protected LinkedListNode<GestoQuadroChave> QuadroChaveAtual { get; set; }
         private int contadorEtapas;
         private EstadoRastreamento novoEstado;
@@ -36,35 +37,48 @@ namespace AuxiliarKinect.Movimentos
             {
                 if (PosicaoValida(esqueletoUsuario))
                 {
+                    Console.WriteLine(QuadroChaveAtual.Value.PoseChave);
+                    historico.Add(esqueletoUsuario);
                     novoEstado = EstadoRastreamento.EmExecucao;
                     if (QuadroChaveAtual.Value == QuadrosChave.Last.Value)
+                    {
                         novoEstado = EstadoRastreamento.Identificado;
+                    }
                     else
                     {
                         if (ContadorQuadros >= QuadroChaveAtual.Value.QuadroLimiteInferior && ContadorQuadros <= QuadroChaveAtual.Value.QuadroLimiteSuperior)
+                        {
                             ProximoQuadroChave();
+                        }
+                            
 
                         else if (ContadorQuadros <= QuadroChaveAtual.Value.QuadroLimiteSuperior)
+                        {
                             PermanecerRastreando();
+                        }
 
                         else if (ContadorQuadros > QuadroChaveAtual.Value.QuadroLimiteSuperior)
                         {
                             ReiniciarRastreamento();
                         }
-                            
+
                     }
                 }
                 else if (ContadorQuadros > QuadroChaveAtual.Value.QuadroLimiteSuperior)
                 {
+                    Console.WriteLine("Reiniciado");
                     ReiniciarRastreamento();
                 }
-                   
 
-                else PermanecerRastreando();
+
+                else
+                {
+                    PermanecerRastreando();
+                }
+               
             }
 
             else ReiniciarRastreamento();
-
             return novoEstado;
         }
     
