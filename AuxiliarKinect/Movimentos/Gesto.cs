@@ -14,6 +14,7 @@ namespace AuxiliarKinect.Movimentos
         protected LinkedListNode<GestoQuadroChave> QuadroChaveAtual { get; set; }
         private int contadorEtapas;
         private EstadoRastreamento novoEstado;
+        protected bool inExecution = false;
 
         public int QuantidadeEtapas
         {
@@ -36,6 +37,8 @@ namespace AuxiliarKinect.Movimentos
             {
                 if (PosicaoValida(esqueletoUsuario))
                 {
+                    inExecution = true;
+                    historico.Add(esqueletoUsuario);
                     novoEstado = EstadoRastreamento.EmExecucao;
                     if (QuadroChaveAtual.Value == QuadrosChave.Last.Value)
                         novoEstado = EstadoRastreamento.Identificado;
@@ -49,18 +52,25 @@ namespace AuxiliarKinect.Movimentos
 
                         else if (ContadorQuadros > QuadroChaveAtual.Value.QuadroLimiteSuperior)
                         {
+                            inExecution = false;
                             ReiniciarRastreamento();
                         }
-                            
+
                     }
                 }
                 else if (ContadorQuadros > QuadroChaveAtual.Value.QuadroLimiteSuperior)
                 {
+                    if(inExecution == true) historico.Add(esqueletoUsuario);
+                    inExecution = false;
                     ReiniciarRastreamento();
                 }
-                   
 
-                else PermanecerRastreando();
+
+                else
+                {
+                    if (inExecution) historico.Add(esqueletoUsuario);
+                    PermanecerRastreando();
+                }
             }
 
             else ReiniciarRastreamento();
