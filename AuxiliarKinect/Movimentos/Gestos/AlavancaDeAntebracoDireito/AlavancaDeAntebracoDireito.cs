@@ -21,14 +21,22 @@ namespace AuxiliarKinect.Movimentos.Gestos.AlavancaDeAntebracoDireito
         {
             QuadrosChave = new LinkedList<GestoQuadroChave>();
             QuadrosChave.AddFirst(new GestoQuadroChave(new AnteBracoDireitoDepois(), 0, 1));
-            QuadrosChave.AddFirst(new GestoQuadroChave(new AnteBracoDireitoMeio(), 1, 25));
-            QuadrosChave.AddLast(new GestoQuadroChave(new AnteBracoDireitoAntes(), 1, 25));
+            QuadrosChave.AddLast(new GestoQuadroChave(new AnteBracoDireitoMeio(), 15, 40));
+            QuadrosChave.AddLast(new GestoQuadroChave(new AnteBracoDireitoAntes(), 15, 40));
+            QuadrosChave.AddLast(new GestoQuadroChave(new AnteBracoDireitoMeio(), 15, 40));
+            QuadrosChave.AddFirst(new GestoQuadroChave(new AnteBracoDireitoDepois(), 15, 25));
+            InicializaHistorico();
         }
 
         protected override bool PosicaoValida(Skeleton esqueletoUsuario)
         {
             EstadoRastreamento estado = QuadroChaveAtual.Value.PoseChave.Rastrear(esqueletoUsuario);
             return estado == EstadoRastreamento.Identificado;
+        }
+
+        protected void InicializaHistorico()
+        {
+            historico = new List<Skeleton>();
         }
     }
 }
