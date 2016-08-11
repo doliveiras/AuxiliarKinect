@@ -18,9 +18,16 @@ namespace AuxiliarKinect.FuncoesBasicas
 
         public InicializadorKinect()
         {
-            SeletorKinect = new KinectSensorChooser();
-            SeletorKinect.KinectChanged += SeletorKinect_KinectChanged;
-            SeletorKinect.Start();
+            try
+            {
+                SeletorKinect = new KinectSensorChooser();
+                SeletorKinect.KinectChanged += SeletorKinect_KinectChanged;
+                SeletorKinect.Start();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Source);
+            }
         }
 
         private void SeletorKinect_KinectChanged(object sender, KinectChangedEventArgs kinectArgs)
