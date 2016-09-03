@@ -59,6 +59,14 @@
     <Compile Include="Movimentos\Gestos\AlavancaDeAntebracoDireito\AnteBracoDireitoAntes.cs" />
     <Compile Include="Movimentos\Gestos\AlavancaDeAntebracoDireito\AnteBracoDireitoDepois.cs" />
     <Compile Include="Movimentos\Gestos\AlavancaDeAntebracoDireito\AnteBracoDireitoMeio.cs" />
+    <Compile Include="Movimentos\Gestos\ExtensaoJoelhoDireitoSentado\ExtensaoJoelhoDireitoSentado.cs" />
+    <Compile Include="Movimentos\Gestos\ExtensaoJoelhoDireitoSentado\JoelhoDireitoEsticado.cs" />
+    <Compile Include="Movimentos\Gestos\ExtensaoJoelhoDireitoSentado\JoelhoDireitoReto.cs" />
+    <Compile Include="Movimentos\Gestos\FlexaoCotoveloDireito\CotoveloLadoCorpo.cs" />
+    <Compile Include="Movimentos\Gestos\FlexaoCotoveloDireito\MaoCotoveloReto.cs" />
+    <Compile Include="Movimentos\Gestos\InclinarCabeçaDireita\CabecaAcimaPescoco.cs" />
+    <Compile Include="Movimentos\Gestos\InclinarCabeçaDireita\CabecaDireitaPescoco.cs" />
+    <Compile Include="Movimentos\Gestos\InclinarCabeçaDireita\InclinarCabecaDireita.cs" />
     <Compile Include="Movimentos\IRastreador.cs" />
     <Compile Include="Movimentos\Movimento.cs" />
     <Compile Include="Movimentos\Pose.cs" />
