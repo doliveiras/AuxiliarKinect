@@ -24,19 +24,14 @@ namespace AuxiliarKinect.Movimentos.Gestos.AlavancaDeAntebracoDireito
             Joint espinha = esqueletoUsuario.Joints[JointType.Spine];
 
             double resultadoAngulo = Util.CalcularProdutoEscalar(ombroDireito, cotoveloDireito, maoDireita);
-            //   System.Console.WriteLine("******************ANTEBRACODIREITODEPOIS***************");
-            //   System.Console.WriteLine("Angulo: " + resultadoAngulo);
+
 
             bool anguloCorreto = Util.CompararComMargemErro(margemErroAngulo, resultadoAngulo, ANGULO_ESPERADO);
-          //   bool maoDireitaPosicaoCorreta = Util.CompararComMargemErro(margemErroPosicao, pulsoDireito.Position.Z, ombroDireito.Position.Z);
-             // bool maoDireitaAntesCotovelo = maoDireita.Position.X < cotoveloDireito.Position.X;
+
             bool maoDireitaPosicaoCorreta = pulsoDireito.Position.Z < cotoveloDireito.Position.Z;
             bool maoDireitaAntesCotovelo = maoDireita.Position.X < cotoveloDireito.Position.X;
-                bool maoDireitaAlturaCorreta = Util.CompararComMargemErro(margemErroPosicao, pulsoDireito.Position.Y, cotoveloDireito.Position.Y);
-           //   System.Console.WriteLine("anguloCorreto: " + anguloCorreto);
-         //      System.Console.WriteLine("maoDireitaPosicaoCorreta: " + maoDireitaPosicaoCorreta);
-         //      System.Console.WriteLine("maoDireitaDepoisCotovelo: " + maoDireitaAntesCotovelo);
-         //      System.Console.WriteLine("maoDireitaAlturaCotovelo: " + maoDireitaAlturaCorreta);
+            bool maoDireitaAlturaCorreta = Util.CompararComMargemErro(margemErroPosicao, pulsoDireito.Position.Y, cotoveloDireito.Position.Y);
+
             return anguloCorreto &&
                   maoDireitaAntesCotovelo &&
                   maoDireitaPosicaoCorreta && 

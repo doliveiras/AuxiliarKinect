@@ -51,8 +51,6 @@ namespace AuxiliarKinect.Movimentos
 
         {
             if (evento != null) evento(movimento, new EventArgs());
-            // Está forma é menor, talvez seja bom usar?
-            //evento?.Invoke(movimento, new EventArgs());
         }
     }
 }
