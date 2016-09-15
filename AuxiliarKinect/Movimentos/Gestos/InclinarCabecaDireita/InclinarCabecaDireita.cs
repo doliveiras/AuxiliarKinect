@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AuxiliarKinect.Movimentos.Gestos.InclinarCabeçaDireita
 {
-    class InclinarCabecaDireita: Gesto
+    public class InclinarCabecaDireita: Gesto
     {
         public InclinarCabecaDireita()
         {
@@ -22,6 +22,7 @@ namespace AuxiliarKinect.Movimentos.Gestos.InclinarCabeçaDireita
             QuadrosChave = new LinkedList<GestoQuadroChave>();
             QuadrosChave.AddFirst(new GestoQuadroChave(new CabecaAcimaPescoco(), 0, 1));
             QuadrosChave.AddLast(new GestoQuadroChave(new CabecaDireitaPescoco(), 30, 80));
+            QuadrosChave.AddLast(new GestoQuadroChave(new CabecaAcimaPescoco(), 30, 80));
             InicializaHistorico();
         }
 

@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuxiliarKinect.Movimentos.Gestos.FlexaoCotovelo
+namespace AuxiliarKinect.Movimentos.Gestos.FlexaoCotoveloDireito
 {
-    class CotoveloLadoCorpo : Pose
+    class MaoCotoveloOmbroReto : Pose
     {
         protected override bool PosicaoValida(Skeleton esqueletoUsuario)
         {
@@ -22,13 +22,11 @@ namespace AuxiliarKinect.Movimentos.Gestos.FlexaoCotovelo
 
             bool cotoveloAlinhadoOmbro = Util.CompararComMargemErro(margemErroPosicao, ombro.Position.X, cotovelo.Position.X);
 
-            bool ombroAlinhadoMao = Util.CompararComMargemErro(margemErroPosicao, mao.Position.X ,cotovelo.Position.X);
+            bool ombroAlinhadoMao = Util.CompararComMargemErro(margemErroPosicao, mao.Position.X, cotovelo.Position.X);
 
-            bool cotoveloAbaixoOmbro = cotovelo.Position.Y < ombro.Position.Y;
+            bool ombroMaoReto = Util.CompararComMargemErro(margemErroPosicao, mao.Position.Y, cotovelo.Position.Y);
 
-            bool maoAbaixoCotovelo = mao.Position.Y < cotovelo.Position.Y;
-
-            return cotoveloAlinhadoOmbro && ombroAlinhadoMao && cotoveloAbaixoOmbro && maoAbaixoCotovelo;
+            return cotoveloAlinhadoOmbro && ombroAlinhadoMao && ombroMaoReto;
         }
     }
 }
