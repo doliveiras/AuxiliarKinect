@@ -47,6 +47,9 @@
     <Compile Include="FuncoesBasicas\InicializadorKinect.cs" />
     <Compile Include="FuncoesBasicas\SalvarHistorico.cs" />
     <Compile Include="FuncoesBasicas\Sessao.cs" />
+    <Compile Include="FuncoesBasicas\TimerPlus.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FuncoesBasicas\Util.cs" />
     <Compile Include="FuncoesBasicas\Worker.cs" />
     <Compile Include="Movimentos\EstadoRastreamento.cs" />

@@ -29,7 +29,6 @@ namespace AuxiliarKinect.Movimentos.Gestos.InclinarCabeçaDireita
         protected override bool PosicaoValida(Skeleton esqueletoUsuario)
         {
             EstadoRastreamento estado = QuadroChaveAtual.Value.PoseChave.Rastrear(esqueletoUsuario);
-            if (estado != EstadoRastreamento.NaoIdentificado) Console.WriteLine(estado);
             return estado == EstadoRastreamento.Identificado;
         }
 
